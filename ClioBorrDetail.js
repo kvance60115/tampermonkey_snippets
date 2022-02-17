@@ -19,26 +19,36 @@ var selDd = selTest; */
 
 //alert(pickup_location);
 var sel = document.querySelectorAll("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl > dt");
+var sel2 = document.querySelectorAll("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl > dd");
 //alert(sel[5].innerHTML);
 var elemnum=-1;
 const re = /.*location.*/i;
 var mystr = "";
 var label = "";
+var location="";
 var name ="";
 var pu = "";
+
 
 
 for (const e of sel) {
         elemnum++;
          mystr =e.innerHTML;
           console.log(elemnum);
-          console.log(mystr);
+         // console.log(mystr);
+
 label = sel[elemnum].innerHTML;
-    //location = sel[elemnum].;
+
+location = sel2[elemnum].innerHTML;
+
+console.log(label);
+
+console.log(location);
+
 
        console.log(re.test(mystr));
     if(re.test(mystr)){
-        alert(label);
+        alert(label+" \n "+location);
     }
 
 }
