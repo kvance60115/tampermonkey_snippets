@@ -18,12 +18,16 @@ var selTest = document.querySelector("#reqcollapse > div:nth-child(1) > div.col-
 var selDd = selTest; */
 
 //alert(pickup_location);
-var sel = document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl");
+var sel = document.querySelectorAll("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl > dt");
 
-for (const e of sel1) {
-    console.log(e);
-  }
+const re = /t/;
+var mystr = "";
+for (const e of sel) {
+     console.log(e.innerHTML);
+}
 
+const pattern = /e/;
+pattern.test("The best things in life are free!");
 
 (function() {
     'use strict';
