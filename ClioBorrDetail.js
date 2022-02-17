@@ -20,12 +20,15 @@ var selDd = selTest; */
 //alert(pickup_location);
 var sel = document.querySelectorAll("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl > dt");
 
-const re = /t/;
+const re = /.*location.*/i;
 var mystr = "";
 for (const e of sel) {
-     console.log(e.innerHTML);
-}
+         mystr =e.innerHTML;
+          console.log(mystr);
 
+       console.log(re.test(mystr));
+
+}
 const pattern = /e/;
 pattern.test("The best things in life are free!");
 
