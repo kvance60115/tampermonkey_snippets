@@ -2,8 +2,8 @@
 // @name         ClioBorrDet
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  try to take over the Clio!
+// @author       Kendall Vance
 // @match        https://waubonsee-staff.cliohosting.com/BorRequest/Details/*
 // @icon         https://www.google.com/s2/favicons?domain=cliohosting.com
 // @grant        none
@@ -26,6 +26,7 @@ for (const e of sel) {
          mystr =e.innerHTML;
           console.log(mystr);
 
+        //this was the hard part
        console.log(re.test(mystr));
 
 }
