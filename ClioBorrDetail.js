@@ -10,16 +10,15 @@
 // ==/UserScript==
 
 // var pickup_location=document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl > dd:nth-child(36) > b").innerHTML;
-var pickup_location=document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl > dd:nth-child(32) > b").innerHTML;
+/* var pickup_location=document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl > dd:nth-child(32) > b").innerHTML;
 var name=document.querySelector("#patronHold453 > div > div.col-md-9 > dl > dd:nth-child(2)")
 
 var selTest = document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6");
-var selDd = selTest
+
+var selDd = selTest; */
 
 //alert(pickup_location);
-console.log(name);
-alert(selDd.innerHTML);
-
+sel = document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl");
 
 
 (function() {
