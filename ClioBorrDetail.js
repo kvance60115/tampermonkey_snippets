@@ -18,7 +18,8 @@ var selTest = document.querySelector("#reqcollapse > div:nth-child(1) > div.col-
 var selDd = selTest; */
 
 //alert(pickup_location);
-sel = document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl");
+var sel = document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl");
+console.log(sel);
 
 
 (function() {
