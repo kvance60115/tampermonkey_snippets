@@ -19,7 +19,10 @@ var selDd = selTest; */
 
 //alert(pickup_location);
 var sel = document.querySelector("#reqcollapse > div:nth-child(1) > div.col-md-6 > dl");
-console.log(sel);
+
+for (const e of sel1) {
+    console.log(e);
+  }
 
 
 (function() {
